@@ -138,25 +138,25 @@ BOOL CProcess::GetPathString(LPTSTR lpStr,SIZE_T nLength,PROCESSINFOCLASS Proces
 
 
 
-typedef union _PSAPI_WORKING_SET_BLOCK {
-	ULONG_PTR Flags;
-	struct {
-		ULONG_PTR Protection  :5;
-		ULONG_PTR ShareCount  :3;
-		ULONG_PTR Shared  :1;
-		ULONG_PTR Reserved  :3;
-#if defined(_WIN64)
-		ULONG_PTR VirtualPage  :52;
-#else
-		ULONG_PTR VirtualPage  :20;
-#endif
-	};
-} PSAPI_WORKING_SET_BLOCK, *PPSAPI_WORKING_SET_BLOCK;
-
-typedef struct _PSAPI_WORKING_SET_INFORMATION {
-	ULONG_PTR               NumberOfEntries;
-	PSAPI_WORKING_SET_BLOCK WorkingSetInfo[1];
-} PSAPI_WORKING_SET_INFORMATION, *PPSAPI_WORKING_SET_INFORMATION;
+//typedef union _PSAPI_WORKING_SET_BLOCK {
+//	ULONG_PTR Flags;
+//	struct {
+//		ULONG_PTR Protection  :5;
+//		ULONG_PTR ShareCount  :3;
+//		ULONG_PTR Shared  :1;
+//		ULONG_PTR Reserved  :3;
+//#if defined(_WIN64)
+//		ULONG_PTR VirtualPage  :52;
+//#else
+//		ULONG_PTR VirtualPage  :20;
+//#endif
+//	};
+//} PSAPI_WORKING_SET_BLOCK, *PPSAPI_WORKING_SET_BLOCK;
+//
+//typedef struct _PSAPI_WORKING_SET_INFORMATION {
+//	ULONG_PTR               NumberOfEntries;
+//	PSAPI_WORKING_SET_BLOCK WorkingSetInfo[1];
+//} PSAPI_WORKING_SET_INFORMATION, *PPSAPI_WORKING_SET_INFORMATION;
 
 
 BOOL CProcess::GetWorkingSetInfo(SIZE_T *pWSTotal,SIZE_T *pWSPrivate,SIZE_T *pWSShareable,SIZE_T *pWSShared) const {

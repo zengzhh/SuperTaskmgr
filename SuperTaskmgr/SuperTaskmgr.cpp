@@ -39,6 +39,11 @@ CSuperTaskmgrApp theApp;
 
 BOOL CSuperTaskmgrApp::InitInstance()
 {
+	spdlog::flush_every(std::chrono::seconds(3));
+	spdlog::set_pattern("[%t] %+");
+
+	logger->info("InitInstance");
+
 	CWinApp::InitInstance();
 	//_CrtSetBreakAlloc(874);
 	// 标准初始化

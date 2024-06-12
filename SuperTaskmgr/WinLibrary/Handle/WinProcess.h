@@ -11,7 +11,6 @@ extern NTSTATUS (NTAPI *NtResumeProcess)(HANDLE);
 extern NTSTATUS (NTAPI *NtQueryInformationProcess)(HANDLE, DWORD, PVOID, ULONG, PULONG);
 extern void (NTAPI *RtlGetNtVersionNumbers)(LPDWORD,LPDWORD,LPDWORD);
 extern ULONG (NTAPI *RtlNtStatusToDosError)(NTSTATUS Status);
-extern NTSTATUS (NTAPI *NtQueryInformationProcess)(HANDLE, DWORD, PVOID, ULONG, PULONG);
 
 class CProcess : public CKernelObject {
 private:

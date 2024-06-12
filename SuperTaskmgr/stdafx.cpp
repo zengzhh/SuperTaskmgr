@@ -25,7 +25,7 @@ typedef DWORD (WINAPI *FUNC_SHRunDialog)(HWND,DWORD,LPVOID,LPVOID,LPVOID,DWORD);
 DEFINE_WINAPI(FUNC_SHRunDialog,SHRunDialog,
 	L"shell32",(LPCSTR)61,TRUE);
 
-
+std::shared_ptr<spdlog::logger> logger = spdlog::basic_logger_mt("basic_logger", "logs/mgrspd.log");
 
 
 

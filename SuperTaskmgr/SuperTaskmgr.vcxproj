@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{38B796F5-4980-471F-9268-136ED3E23535}</ProjectGuid>
+    <RootNamespace>SuperTaskmgr</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.34930.59</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="LimitSpeedDlg.cpp" />
+    <ClCompile Include="MFCLibrary\FloatingWindowDlg.cpp" />
+    <ClCompile Include="MFCLibrary\SuperListCtrl.cpp" />
+    <ClCompile Include="QazLibrary\ListDispInfo.cpp" />
+    <ClCompile Include="SelectColumnDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SuperTaskmgr.cpp" />
+    <ClCompile Include="SuperTaskmgrCommand.cpp" />
+    <ClCompile Include="SuperTaskmgrConfig.cpp" />
+    <ClCompile Include="SuperTaskmgrDlg.cpp" />
+    <ClCompile Include="SuperTaskmgrFloatingWindowDlg.cpp" />
+    <ClCompile Include="SuperTaskmgrInit.cpp" />
+    <ClCompile Include="SuperTaskmgrItemColor.cpp" />
+    <ClCompile Include="SuperTaskmgrLstProc.cpp" />
+    <ClCompile Include="SuperTaskmgrNotifyIcon.cpp" />
+    <ClCompile Include="SuperTaskmgrProcess.cpp" />
+    <ClCompile Include="SuperTaskmgrRefresh.cpp" />
+    <ClCompile Include="WinKillProcess.cpp" />
+    <ClCompile Include="WinLibrary\360NetmonData.cpp" />
+    <ClCompile Include="WinLibrary\Global\WinAPI.cpp" />
+    <ClCompile Include="WinLibrary\Global\WinDirectory.cpp" />
+    <ClCompile Include="WinLibrary\Global\WinPEFileInfo.cpp" />
+    <ClCompile Include="WinLibrary\Global\WinSystemInfo.cpp" />
+    <ClCompile Include="WinLibrary\Global\WinSystemInfoApi.cpp" />
+    <ClCompile Include="WinLibrary\Handle\WinFile.cpp" />
+    <ClCompile Include="WinLibrary\Handle\WinProcess.cpp" />
+    <ClCompile Include="WinLibrary\Handle\WinProcessApi.cpp" />
+    <ClCompile Include="WinLibrary\Handle\WinRegKey.cpp" />
+    <ClCompile Include="WinLibrary\Handle\WinThread.cpp" />
+    <ClCompile Include="WinLibrary\WinNtDriver.cpp" />
+    <ClCompile Include="WinLibrary\WinNtDriverApi.cpp" />
+    <ClCompile Include="WinLibrary\WinSCManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\icon_null.ico" />
+    <Image Include="res\SuperTaskmgr.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SuperTaskmgr.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\WinLib\WinLib\WinLibrary\Global\WinCritialSection.h" />
+    <ClInclude Include="LimitSpeedDlg.h" />
+    <ClInclude Include="MFCLibrary\FloatingWindowDlg.h" />
+    <ClInclude Include="MFCLibrary\MFCDoubleBuffer.h" />
+    <ClInclude Include="MFCLibrary\SetWindowPos.h" />
+    <ClInclude Include="MFCLibrary\SuperListCtrl.h" />
+    <ClInclude Include="QazLibrary\DMAlloc.h" />
+    <ClInclude Include="QazLibrary\ListDispInfo.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SelectColumnDlg.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SuperTaskmgr.h" />
+    <ClInclude Include="SuperTaskmgrCommand.h" />
+    <ClInclude Include="SuperTaskmgrConfig.h" />
+    <ClInclude Include="SuperTaskmgrDlg.h" />
+    <ClInclude Include="SuperTaskmgrFloatingWindowDlg.h" />
+    <ClInclude Include="SuperTaskmgrInit.h" />
+    <ClInclude Include="SuperTaskmgrItemColor.h" />
+    <ClInclude Include="SuperTaskmgrLstProc.h" />
+    <ClInclude Include="SuperTaskmgrNotifyIcon.h" />
+    <ClInclude Include="SuperTaskmgrProcess.h" />
+    <ClInclude Include="SuperTaskmgrRefresh.h" />
+    <ClInclude Include="SuperTaskmgrWindowData.h" />
+    <ClInclude Include="WinKillProcess.h" />
+    <ClInclude Include="WinLibrary\360Netmon.h" />
+    <ClInclude Include="WinLibrary\Global\NtKernelDefine.h" />
+    <ClInclude Include="WinLibrary\Global\NtStatusDefine.h" />
+    <ClInclude Include="WinLibrary\Global\WinAPI.h" />
+    <ClInclude Include="WinLibrary\Global\WinDebug.h" />
+    <ClInclude Include="WinLibrary\Global\WinDirectory.h" />
+    <ClInclude Include="WinLibrary\Global\WinLastError.h" />
+    <ClInclude Include="WinLibrary\Global\WinPEFileInfo.h" />
+    <ClInclude Include="WinLibrary\Global\WinSystemInfo.h" />
+    <ClInclude Include="WinLibrary\Handle\WinEvent.h" />
+    <ClInclude Include="WinLibrary\Handle\WinFile.h" />
+    <ClInclude Include="WinLibrary\Handle\WinMutex.h" />
+    <ClInclude Include="WinLibrary\Handle\WinObject.h" />
+    <ClInclude Include="WinLibrary\Handle\WinProcess.h" />
+    <ClInclude Include="WinLibrary\Handle\WinRegKey.h" />
+    <ClInclude Include="WinLibrary\Handle\WinThread.h" />
+    <ClInclude Include="WinLibrary\WinGlobal.h" />
+    <ClInclude Include="WinLibrary\WinHandle.h" />
+    <ClInclude Include="WinLibrary\WinNotifyIcon.h" />
+    <ClInclude Include="WinLibrary\WinNtDriver.h" />
+    <ClInclude Include="WinLibrary\WinSCManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MFCLibrary\FloatingWindowDlg.inl" />
+    <None Include="SuperTaskmgrFloatingWindowDlg.inl" />
+    <None Include="WinLibrary\360Netmon.inl" />
+    <None Include="WinLibrary\WinNotifyIcon.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="SuperTaskmgr.exe.manifest">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="SuperTaskmgr.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

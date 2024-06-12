@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="1_源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="3_资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="2_头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="MFCLibrary">
+      <UniqueIdentifier>{87fa0d87-76b6-4e01-9def-f09f131acedb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QazLibrary">
+      <UniqueIdentifier>{c30805ae-66ef-4b9a-bf89-c8618e3bff48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WinLibrary">
+      <UniqueIdentifier>{a4be6610-3c7b-4208-b0bc-d9ee3306d850}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WinLibrary\Global">
+      <UniqueIdentifier>{f588792f-55ab-404e-b891-a28d154a31bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WinLibrary\Handle">
+      <UniqueIdentifier>{62e83507-3a85-4e30-9bda-5894d254ff34}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LimitSpeedDlg.cpp">
+      <Filter>1_源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectColumnDlg.cpp">
+      <Filter>1_源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>1_源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperTaskmgr.cpp">
+      <Filter>1_源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperTaskmgrCommand.cpp">
+      <Filter>1_源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperTaskmgrConfig.cpp">
+      <Filter>1_源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperTaskmgrDlg.cpp">
+      <Filter>1_源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperTaskmgrFloatingWindowDlg.cpp">
+      <Filter>1_源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperTaskmgrInit.cpp">
+      <Filter>1_源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperTaskmgrItemColor.cpp">
+      <Filter>1_源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperTaskmgrLstProc.cpp">
+      <Filter>1_源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperTaskmgrNotifyIcon.cpp">
+      <Filter>1_源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperTaskmgrProcess.cpp">
+      <Filter>1_源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperTaskmgrRefresh.cpp">
+      <Filter>1_源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WinKillProcess.cpp">
+      <Filter>1_源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MFCLibrary\FloatingWindowDlg.cpp">
+      <Filter>MFCLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="MFCLibrary\SuperListCtrl.cpp">
+      <Filter>MFCLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="QazLibrary\ListDispInfo.cpp">
+      <Filter>QazLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="WinLibrary\360NetmonData.cpp">
+      <Filter>WinLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="WinLibrary\WinNtDriver.cpp">
+      <Filter>WinLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="WinLibrary\WinNtDriverApi.cpp">
+      <Filter>WinLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="WinLibrary\WinSCManager.cpp">
+      <Filter>WinLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="WinLibrary\Global\WinAPI.cpp">
+      <Filter>WinLibrary\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="WinLibrary\Global\WinDirectory.cpp">
+      <Filter>WinLibrary\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="WinLibrary\Global\WinPEFileInfo.cpp">
+      <Filter>WinLibrary\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="WinLibrary\Global\WinSystemInfo.cpp">
+      <Filter>WinLibrary\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="WinLibrary\Global\WinSystemInfoApi.cpp">
+      <Filter>WinLibrary\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="WinLibrary\Handle\WinFile.cpp">
+      <Filter>WinLibrary\Handle</Filter>
+    </ClCompile>
+    <ClCompile Include="WinLibrary\Handle\WinProcess.cpp">
+      <Filter>WinLibrary\Handle</Filter>
+    </ClCompile>
+    <ClCompile Include="WinLibrary\Handle\WinProcessApi.cpp">
+      <Filter>WinLibrary\Handle</Filter>
+    </ClCompile>
+    <ClCompile Include="WinLibrary\Handle\WinRegKey.cpp">
+      <Filter>WinLibrary\Handle</Filter>
+    </ClCompile>
+    <ClCompile Include="WinLibrary\Handle\WinThread.cpp">
+      <Filter>WinLibrary\Handle</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\icon_null.ico">
+      <Filter>3_资源文件</Filter>
+    </Image>
+    <Image Include="res\SuperTaskmgr.ico">
+      <Filter>3_资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SuperTaskmgr.rc">
+      <Filter>3_资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LimitSpeedDlg.h">
+      <Filter>2_头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>2_头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectColumnDlg.h">
+      <Filter>2_头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>2_头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperTaskmgr.h">
+      <Filter>2_头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperTaskmgrCommand.h">
+      <Filter>2_头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperTaskmgrConfig.h">
+      <Filter>2_头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperTaskmgrDlg.h">
+      <Filter>2_头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperTaskmgrFloatingWindowDlg.h">
+      <Filter>2_头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperTaskmgrInit.h">
+      <Filter>2_头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperTaskmgrItemColor.h">
+      <Filter>2_头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperTaskmgrLstProc.h">
+      <Filter>2_头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperTaskmgrNotifyIcon.h">
+      <Filter>2_头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperTaskmgrProcess.h">
+      <Filter>2_头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperTaskmgrRefresh.h">
+      <Filter>2_头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperTaskmgrWindowData.h">
+      <Filter>2_头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WinKillProcess.h">
+      <Filter>2_头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCLibrary\FloatingWindowDlg.h">
+      <Filter>MFCLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCLibrary\MFCDoubleBuffer.h">
+      <Filter>MFCLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCLibrary\SetWindowPos.h">
+      <Filter>MFCLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCLibrary\SuperListCtrl.h">
+      <Filter>MFCLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="QazLibrary\DMAlloc.h">
+      <Filter>QazLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="QazLibrary\ListDispInfo.h">
+      <Filter>QazLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="WinLibrary\360Netmon.h">
+      <Filter>WinLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="WinLibrary\WinGlobal.h">
+      <Filter>WinLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="WinLibrary\WinHandle.h">
+      <Filter>WinLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="WinLibrary\WinNotifyIcon.h">
+      <Filter>WinLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="WinLibrary\WinNtDriver.h">
+      <Filter>WinLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="WinLibrary\WinSCManager.h">
+      <Filter>WinLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="WinLibrary\Global\NtKernelDefine.h">
+      <Filter>WinLibrary\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="WinLibrary\Global\NtStatusDefine.h">
+      <Filter>WinLibrary\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="WinLibrary\Global\WinAPI.h">
+      <Filter>WinLibrary\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WinLib\WinLib\WinLibrary\Global\WinCritialSection.h">
+      <Filter>WinLibrary\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="WinLibrary\Global\WinDebug.h">
+      <Filter>WinLibrary\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="WinLibrary\Global\WinDirectory.h">
+      <Filter>WinLibrary\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="WinLibrary\Global\WinLastError.h">
+      <Filter>WinLibrary\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="WinLibrary\Global\WinPEFileInfo.h">
+      <Filter>WinLibrary\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="WinLibrary\Global\WinSystemInfo.h">
+      <Filter>WinLibrary\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="WinLibrary\Handle\WinEvent.h">
+      <Filter>WinLibrary\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="WinLibrary\Handle\WinFile.h">
+      <Filter>WinLibrary\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="WinLibrary\Handle\WinMutex.h">
+      <Filter>WinLibrary\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="WinLibrary\Handle\WinObject.h">
+      <Filter>WinLibrary\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="WinLibrary\Handle\WinProcess.h">
+      <Filter>WinLibrary\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="WinLibrary\Handle\WinRegKey.h">
+      <Filter>WinLibrary\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="WinLibrary\Handle\WinThread.h">
+      <Filter>WinLibrary\Handle</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SuperTaskmgrFloatingWindowDlg.inl">
+      <Filter>2_头文件</Filter>
+    </None>
+    <None Include="MFCLibrary\FloatingWindowDlg.inl">
+      <Filter>MFCLibrary</Filter>
+    </None>
+    <None Include="WinLibrary\360Netmon.inl">
+      <Filter>WinLibrary</Filter>
+    </None>
+    <None Include="WinLibrary\WinNotifyIcon.inl">
+      <Filter>WinLibrary</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="SuperTaskmgr.exe.manifest" />
+  </ItemGroup>
+</Project>

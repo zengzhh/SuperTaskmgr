@@ -341,8 +341,8 @@ BOOL CSuperTaskmgrDlg::RefreshProcessInfo(){
 
 	//计算距离上一次刷新时间间隔
 	static LONGLONG LastTime=0l; //上一次分别刷新所有进程的时间
-	ULONG lTimeSpan; //距离上一次刷新的时间间隔 (单位：0.1毫秒)
-	LONGLONG llTimeSpan; //距离上一次刷新的时间间隔 (单位：10纳秒)
+	ULONG lTimeSpan; //距离上一次刷新的时间间隔 (单位：1毫秒)
+	LONGLONG llTimeSpan; //距离上一次刷新的时间间隔 (单位：100纳秒)
 	if (LastTime==0l) {
 		llTimeSpan=0l;
 		lTimeSpan=0;

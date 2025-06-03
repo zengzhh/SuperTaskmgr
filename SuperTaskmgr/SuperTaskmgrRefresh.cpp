@@ -7,6 +7,7 @@
 #include "WinKillProcess.h"
 #include <math.h>
 #include <locale.h>
+#include "SuperTaskmgrUtils.h"
 
 //纯正整数转换（ULONG 到 LPTSTR）
 LPTSTR CSuperTaskmgrDlg::ConvULONGStr(LPTSTR szBuf,LPVOID pItem,LPPROCESS ppro){
@@ -551,6 +552,7 @@ BOOL CSuperTaskmgrDlg::RefreshProcessInfo(){
 		npro.HandleCount = sp.HandleCount; //句柄数量
 		npro.Priority = KernelPriorityClass[sp.BasePriority]; //进程优先级
 
+		logger->info("threads: {}, name: {}", sp.NumberOfThreads, UnicodeToUtf8(npro.name).c_str());
 		npro.isSuspended = sp.NumberOfThreads>0 && sp.Threads[0].ThreadState == 5 && sp.Threads[0].WaitReason == Suspended;
 
 		npro.CPU=0.0f;//初始化CPU使用率

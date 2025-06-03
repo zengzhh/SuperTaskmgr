@@ -228,6 +228,7 @@
     <ClCompile Include="SuperTaskmgrNotifyIcon.cpp" />
     <ClCompile Include="SuperTaskmgrProcess.cpp" />
     <ClCompile Include="SuperTaskmgrRefresh.cpp" />
+    <ClCompile Include="SuperTaskmgrUtils.cpp" />
     <ClCompile Include="WinKillProcess.cpp" />
     <ClCompile Include="WinLibrary\360NetmonData.cpp" />
     <ClCompile Include="WinLibrary\Global\WinAPI.cpp" />
@@ -274,6 +275,7 @@
     <ClInclude Include="SuperTaskmgrNotifyIcon.h" />
     <ClInclude Include="SuperTaskmgrProcess.h" />
     <ClInclude Include="SuperTaskmgrRefresh.h" />
+    <ClInclude Include="SuperTaskmgrUtils.h" />
     <ClInclude Include="SuperTaskmgrWindowData.h" />
     <ClInclude Include="WinKillProcess.h" />
     <ClInclude Include="WinLibrary\360Netmon.h" />

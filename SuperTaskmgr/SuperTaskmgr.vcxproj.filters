@@ -126,6 +126,9 @@
     <ClCompile Include="WinLibrary\Handle\WinThread.cpp">
       <Filter>WinLibrary\Handle</Filter>
     </ClCompile>
+    <ClCompile Include="SuperTaskmgrUtils.cpp">
+      <Filter>1_源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\icon_null.ico">
@@ -275,6 +278,9 @@
     </ClInclude>
     <ClInclude Include="WinLibrary\Handle\WinThread.h">
       <Filter>WinLibrary\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperTaskmgrUtils.h">
+      <Filter>1_源文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
